@@ -1,0 +1,144 @@
+% Main LaTeX document for the RSS'09 Booklet
+\documentclass[12pt]{article}
+\usepackage{fleqn}
+\usepackage{my}
+\usepackage{times}
+\usepackage[normalem]{ulem}
+\usepackage{eurosym}
+%\usepackage{epsfig}
+%\newcommand{\denselist}{\itemsep -3pt\topsep 0pt\partopsep 0pt\parsep 0pt}
+
+%\pdfoutput=0
+\usepackage{wrapfig,graphicx}
+\usepackage{hyperref}
+\hypersetup{letterpaper,bookmarksopen,bookmarksnumbered,
+pdfpagemode=UseOutlines,
+colorlinks=true,
+linkcolor=blue,
+anchorcolor=blue,
+citecolor=blue,
+filecolor=blue,
+menucolor=blue,
+urlcolor=blue
+}
+\usepackage[utf8]{inputenc}
+%\usepackage[spanish]{babel}
+\usepackage{fancyhdr}
+\usepackage{array}
+\usepackage{wrapfig}
+\usepackage{xspace}
+
+%\DeclareGraphicsExtensions{.eps,.ps,.PS,.EPS,.pdf,.jpg}
+
+
+\usepackage{ifthen}
+\usepackage[usenames,dvipsnames]{color}
+\newboolean{include-notes}
+\setboolean{include-notes}{true}
+% http://en.wikibooks.org/wiki/LaTeX/Colors
+\newcommand{\adnote}[1]{\ifthenelse{\boolean{include-notes}}%
+ {\textcolor{LimeGreen}{\textbf{Fabio: #1}}}{}}
+
+
+\newcommand{\mlss}{MLSS\xspace}
+
+\usepackage{array}
+
+\newcolumntype{x}[1]{%
+>{\centering\hspace{0pt}}p{#1}}%
+\usepackage{multirow}
+
+\usepackage{titlesec}
+\titleformat*{\section}{\huge\bfseries}
+\titleformat*{\subsection}{\Large\bfseries}
+
+
+\graphicspath{{../figures/}}
+
+
+%\fancyhead[RO] {Universidad de Zaragoza, Spain}
+%\fancyhead[LO] {RSS 2010}
+\fancyhead[RO] {University of Sydney, Australia}
+\fancyhead[LO] {MLSS 2015}
+\begin{document}
+
+\thispagestyle{empty}
+
+%------------------------------
+% TITLEPAGE
+%------------------------------
+
+ \centerline{\includegraphics[width=15cm]{mlss-title}}
+
+\vspace{5cm}
+
+\centerline{\includegraphics[width=15cm]{mlss-sydney-cartoon-bw3}}
+
+\vspace{5cm}
+
+\begin{center}
+{\Large Program Booklet} \\[0.3cm]
+        February 16th - February 25th, 2015 \\
+       University of Sydney\\
+      Sydney, Australia\\
+       \url{http://www.nicta.com.au/mlss2015}
+\end{center}
+
+\clearpage
+\thispagestyle{empty}
+~\clearpage
+% \setcounter{page}{1}
+
+\tableofcontents
+
+
+\pagestyle{fancy}
+
+\clearpage
+%\phantomsection
+\label{preface}
+\include{preface}
+
+
+\clearpage
+%\phantomsection
+\label{intro}
+\include{local}
+
+\clearpage
+%\phantomsection
+ \label{techprg}
+ \include{techprg}
+ 
+ \clearpage
+%\phantomsection
+ \label{abstracts}
+ \include{abstracts-never-straddle}
+   
+% \clearpage
+% \phantomsection
+% \label{opensessions}
+% \include{opensessions}
+
+% \clearpage
+% \phantomsection
+% \label{workshops}
+% \include{workshops}
+
+\clearpage
+%\phantomsection
+\label{organizers}
+\include{organizers}
+% 
+ \clearpage
+%\phantomsection
+ \label{instructions}
+ \include{instructions}
+
+%%\clearpage
+%%\phantomsection
+%%\label{nextrss}
+%%\include{nextrss}
+
+
+\end{document}
