@@ -5,10 +5,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \label{program_overview}
 %
-\begin{center}
- \includegraphics[width=0.95\linewidth]{calendar1}
- \includegraphics[width=0.95\linewidth]{calendar2}
-\end{center}
+%\begin{center}
+ %\includegraphics[width=0.95\linewidth]{calendar1}
+ %\includegraphics[width=0.95\linewidth]{calendar2}
+%\end{center}
 
 %\begin{center}
 % \includegraphics[width=0.95\linewidth]{calendar-list1}
@@ -23,11 +23,22 @@
 %\end{center}
 %
 
-\begin{table}[h]
-\begin{tabular}{  l l l l p{7cm} l    }
-Day & Date   & Start & End   & Title                                                             & Where             \\
-Sun & 15-Feb & 16:00 & 20:00 & Registration (check-in)                                           & Bosch building 1A \\
-Mon & 16-Feb & 07:30 & 09:00 & Registration (check-in)                                           & Bosch building 1A \\
+\begin{tabular}{l l}
+\sc{Key} & \sc{Venue}  \\
+B1A &  Bosch building 1A (Bosch Lecture Theatre 2) \\
+PNR & PNR building (Learning Studios 310, 311 and 315) \\
+SSP &  Starship Sydney \& The Pontoon \\
+ \end{tabular}
+ 
+\begin{longtable}{  p{0.5cm} l l l p{9cm}  c    }
+%\begin{table}[h]
+%\begin{tabular}{  l l l l p{7cm} l    }
+\toprule
+ & \textbf{Date}   & \textbf{Start} & \textbf{End}   & \textbf{Title}                                                             & \textbf{Where}             \\
+\toprule
+Sun & 15-Feb & 16:00 & 20:00 & Registration (check-in)                                           &B1A \\
+\midrule
+Mon & 16-Feb & 07:30 & 09:00 & Registration (check-in)                                           &B1A \\
     &        & 09:00 & 10:30 & Intro to Machine Learning  (Webers)                               &                   \\
     &        & 10:30 & 10:50 & Coffee Break                                                      &                   \\
     &        & 10:50 & 12:00 & Intro to Machine Learning  (Webers)                               &                   \\
@@ -35,8 +46,9 @@ Mon & 16-Feb & 07:30 & 09:00 & Registration (check-in)                          
     &        & 13:00 & 14:30 & Probabilistic Graphical Models (Domke)                            &                   \\
     &        & 14:30 & 14:50 & Coffee Break                                                      &                   \\
     &        & 14:50 & 16:00 & Probabilistic Graphical Models (Domke)                            &                   \\
-    &        & 17:00 & 18:30 & Lab I - Intro to Python and PCA                                   & PNR building      \\
-Tue & 17-Feb & 07:30 & 09:00 & Registration (check-in)                                           & Bosch building 1A \\
+    &        & 17:00 & 18:30 & Lab I - Intro to Python and PCA                                   & PNR      \\
+\midrule
+Tue & 17-Feb & 07:30 & 09:00 & Registration (check-in)                                           &B1A \\
     &        & 09:00 & 10:30 & Optimization (Schmidt)                                            &                   \\
     &        & 10:30 & 10:50 & Coffee Break                                                      &                   \\
     &        & 10:50 & 12:00 & Optimization (Schmidt)                                            &                   \\
@@ -44,8 +56,9 @@ Tue & 17-Feb & 07:30 & 09:00 & Registration (check-in)                          
     &        & 13:00 & 14:30 & Boosting (Nock)                                                   &                   \\
     &        & 14:30 & 14:50 & Coffee Break                                                      &                   \\
     &        & 14:50 & 16:00 & Boosting (Nock)                                                   &                   \\
-    &        & 17:00 & 18:30 & Lab II - Regression                                               & PNR building      \\
-Wed & 18-Feb & 07:30 & 09:00 & Registration (check-in)                                           & Bosch building 1A \\
+    &        & 17:00 & 18:30 & Lab II - Regression                                               & PNR      \\
+   \midrule
+Wed & 18-Feb & 07:30 & 09:00 & Registration (check-in)                                           &B1A \\
     &        & 09:00 & 10:30 & Computational Information Geometry and Machine Learning (Nielsen) &                   \\
     &        & 10:30 & 10:50 & Coffee Break                                                      &                   \\
     &        & 10:50 & 12:00 & Computational Information Geometry and Machine Learning (Nielsen) &                   \\
@@ -53,8 +66,9 @@ Wed & 18-Feb & 07:30 & 09:00 & Registration (check-in)                          
     &        & 13:00 & 14:30 & ML for Recommender Systems (Karatzoglou)                          &                   \\
     &        & 14:30 & 14:50 & Coffee Break                                                      &                   \\
     &        & 14:50 & 16:00 & ML for Recommender Systems (Karatzoglou)                          &                   \\
-    &        & 17:00 & 18:30 & Lab III - Classification                                          & PNR building      \\
-Thu & 19-Feb & 07:30 & 09:00 & Registration (check-in)                                           & Bosch building 1A \\
+    &        & 17:00 & 18:30 & Lab III - Classification                                          & PNR      \\
+    \midrule
+Thu & 19-Feb & 07:30 & 09:00 & Registration (check-in)                                           &B1A \\
     &        & 09:00 & 10:30 & Structured Prediction for Computer Vision (Gould)                 &                   \\
     &        & 10:30 & 10:50 & Coffee Break                                                      &                   \\
     &        & 10:50 & 12:00 & Structured Prediction for Computer Vision (Gould)                 &                   \\
@@ -62,8 +76,9 @@ Thu & 19-Feb & 07:30 & 09:00 & Registration (check-in)                          
     &        & 13:00 & 14:30 & Bayesian inference and MCMC (Carpenter)                           &                   \\
     &        & 14:30 & 14:50 & Coffee Break                                                      &                   \\
     &        & 14:50 & 16:00 & Bayesian inference and MCMC (Carpenter)                           &                   \\
-    &        & 17:00 & 18:30 & Lab IV - Clustering and Latent Variable Models                    & PNR building      \\
-Fri & 20-Feb & 07:30 & 09:00 & Registration (check-in)                                           & Bosch building 1A \\
+    &        & 17:00 & 18:30 & Lab IV - Clustering and Latent Variable Models                    & PNR      \\
+    \midrule
+Fri & 20-Feb & 07:30 & 09:00 & Registration (check-in)                                           &B1A \\
     &        & 09:00 & 10:30 & Approximate Inference (Ihler)                                     &                   \\
     &        & 10:30 & 10:50 & Coffee Break                                                      &                   \\
     &        & 10:50 & 12:00 & Approximate Inference (Ihler)                                     &                   \\
@@ -71,8 +86,9 @@ Fri & 20-Feb & 07:30 & 09:00 & Registration (check-in)                          
     &        & 13:00 & 14:30 & Stan Hands-on (Carpenter)                                         &                   \\
     &        & 14:30 & 14:50 & Coffee Break                                                      &                   \\
     &        & 14:50 & 16:00 & Stan Hands-on (Carpenter)                                         &                   \\
-    &        & 17:00 & 18:30 & Lab V - Recommendation                                            & PNR building      \\
-Mon & 23-Feb & 07:30 & 09:00 & Registration (check-in)                                           & Bosch building 1A \\
+    &        & 17:00 & 18:30 & Lab V - Recommendation                                            & PNR      \\
+    \midrule
+Mon & 23-Feb & 07:30 & 09:00 & Registration (check-in)                                           &B1A \\
     &        & 09:00 & 10:30 & Bayesian non-parametrics: Gaussian Processes (Lawrence)           &                   \\
     &        & 10:30 & 10:50 & Coffee Break                                                      &                   \\
     &        & 10:50 & 12:00 & Bayesian non-parametrics: Gaussian Processes (Lawrence)           &                   \\
@@ -80,25 +96,28 @@ Mon & 23-Feb & 07:30 & 09:00 & Registration (check-in)                          
     &        & 13:00 & 14:30 & Bayesian non-parametrics: Dirichlet Processes and friends (Adams) &                   \\
     &        & 14:30 & 14:50 & Coffee Break                                                      &                   \\
     &        & 14:50 & 16:00 & Bayesian non-parametrics: Dirichlet Processes and friends (Adams) &                   \\
-    &        & 17:00 & 18:30 & Practical Tutorial  - Bayesian Non-parameterics                   &                   \\
-Tue & 24-Feb & 09:00 & 10:30 & Natural Language Processing (Johnson)                             & Bosch building 1A \\
+    &        & 17:00 & 18:30 & Practical Tutorial  - Bayesian Non-parametrics                   &                   \\
+    \midrule
+Tue & 24-Feb & 09:00 & 10:30 & Natural Language Processing (Johnson)                             &B1A \\
     &        & 10:30 & 10:50 & Coffee Break                                                      &                   \\
     &        & 10:50 & 12:00 & Natural Language Processing (Johnson)                             &                   \\
     &        & 12:00 & 13:00 & Lunch                                                             &                   \\
     &        & 13:00 & 14:30 & Bayesian non-parametric methods for unsupervised models (Buntine) &                   \\
     &        & 14:30 & 14:50 & Coffee Break                                                      &                   \\
     &        & 14:50 & 16:00 & Bayesian non-parametric methods for unsupervised models (Buntine) &                   \\
-    &        & 19:00 & 22:00 & Banquet Dinner                                                    & Starship Sydney   \\
-Wed & 25-Feb & 09:00 & 10:30 & Deep Learning (Qu)                                                & Bosch building 1A \\
+    &        & 19:00 & 22:00 & Banquet Dinner                                                    & SSP   \\
+    \midrule
+Wed & 25-Feb & 09:00 & 10:30 & Deep Learning (Qu)                                                &B1A \\
     &        & 10:30 & 10:50 & Coffee Break                                                      &                   \\
     &        & 10:50 & 12:00 & Deep Learning (Qu)                                                &                   \\
     &        & 12:00 & 13:00 & Lunch                                                             &                   \\
     &        & 13:00 & 14:30 & Prediction Markets (Reid)                                         &                   \\
     &        & 14:30 & 14:50 & Coffee Break                                                      &                   \\
     &        & 14:50 & 16:00 & Prediction Markets (Reid)                                         &                   \\
-    &        & 17:00 & 18:30 & AMA / Closure                                                     &                  
-\end{tabular}
-\end{table}
+    &        & 17:00 & 18:30 & AMA / Closure                                                     &          \\
+    \bottomrule        
+%\end{tabular}
+\end{longtable}
 
 
 
